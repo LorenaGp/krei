@@ -1,0 +1,617 @@
+body{
+	min-height: 100%;
+}
+
+li{
+	text-align:center;
+}
+
+a{
+	text-decoration:none;
+}
+.modal a, .barra_menu a{
+	text-decoration: none;
+	color:white;
+}
+
+.usuario p{
+	color:white;
+	font-size: 1.7em;
+	font-family: Open Sans Condensed, sans-serif;
+	margin:1em, 1em, 2em, 1em;
+	padding:1em;
+}
+
+.registro_no{
+	padding:0;
+	font-family:"Open Sans", sans-serif;
+	line-height:2em;
+	font-size:1em;
+	margin:5%;
+}
+
+.registro_no a, .registro_no a:visited{
+	
+	color:white;
+}
+
+#registrar{
+	margin-bottom: 3em;
+	padding:0.2em;
+
+}
+
+.formulario_registro_no{
+	width:500px;
+	background-color:rgba(44, 44, 44, 0.9); 
+	margin:0 auto;
+	margin-top:7%;
+	margin-bottom:5%;
+	border-radius: 4%;
+}
+
+.mensaje{
+	display:none;
+}
+.modal a:visited, .barra_menu a:visited{
+	color:white;
+}
+.submenu_home a, .submenu_grupos a, .submenu_blog a{
+	color:black;
+}
+
+.submenu_home a:visited, .submenu_grupos a:visited, .submenu_blog a:visited{
+	color:black;
+}
+.limpiar{
+	clear:both;
+}
+.barra_menu{
+	margin:0;
+	padding:0;
+}
+.s1, .s2, .s3, .s4, .s5{
+	display:inline;
+	font-size: 1.7em;
+	font-family: 'Covered By Your Grace', cursive;
+	float:left;	
+	padding:0.5em 2em 0.5em 2em;
+	margin-top:1em;
+	color:white;
+}
+
+.s1, .s3{
+	width:100px;
+}
+
+.s2{
+	width:180px;
+}
+
+.submenu_home, .submenu_blog, .submenu_grupos{
+	display:none;
+	list-style-type: none;
+	font-family: Amatic SC;
+	font-size:1.5em;
+	float:none;
+	margin:0;
+	padding:0;
+}
+
+.submenu_home{
+	position:absolute;
+	padding:0.5em 2em 0.5em 2em;
+	width:113px;
+	margin:0;
+}
+
+.home1 a, .home2 a , .home3 a, .grupos1 a, .grupos2 a, .grupos3 a, .grupos4 a, .blog1 a, .blog2 a, .blog3 a{
+	color:black;
+}
+
+
+.submenu_grupos{
+	position:absolute;
+	margin:0em 2em 1em 8.7em;
+	padding:0.5em 2em 0.5em 2em;
+	width:193px;
+}
+
+.submenu_blog{
+	position:absolute;
+	margin:0em 2em 1em 20.75em;
+	padding:0.5em 2em 0.5em 2em;
+	width:112px;
+}
+
+.modal{
+	display:none;
+	position:fixed;
+	background-color:rgba(44, 44, 44, 0.9);
+	left:0;
+	bottom:0;
+	z-index: 1001;
+}
+
+.modal p{
+	color:white;
+	margin-left:1em;
+	font-family: Open Sans Condensed, sans-serif;
+	font-size: 1.2em;
+}
+
+.modal a{
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: Open Sans Condensed, sans-serif;
+}
+
+.boton{
+	float:right;
+	margin:0 5em 2em 0;
+}
+
+.formulario{
+	font-family:"Open Sans", sans-serif;
+	margin-left:25%;
+	margin-right:25%;
+	margin-bottom:5%;
+	margin-top:0.2%;
+	line-height:1.5em;
+	padding:2em;
+	font-size:1em;
+	float:left;
+	padding-top:1em;
+	background-color:rgba(44, 44, 44, 0.9) ;
+}
+
+label{
+	color:white;
+	line-height:1.8em;
+}
+.cajas{
+	position:relative;
+	display:table-cell;
+	float:right;
+}
+
+h1{
+	font-family:Open Sans Condensed;
+	font-size: 3em;
+	color:white;
+	margin-left: 1em;
+	margin-top:0.1%;
+}
+
+.logo{
+	width:358px;
+	margin:0 auto;
+}
+
+.fondo_eshop{
+	margin:1%;
+	background-color:rgba(232, 230, 231, 0.6);
+	padding:2%;
+}
+
+.menu_eshop li{
+	display:inline;
+	float:left;
+	list-style-type: none;
+	font-size: 1.7em;
+	font-family: Open Sans Condensed;
+	float:right;	
+	padding:0.5em 1em 0.5em 1em;
+	margin-top:0.5em;
+}
+
+
+
+h2{
+	text-decoration: none;
+	color:black;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 4em;
+	font-weight: bold;
+	float:left;
+	margin:1% 5% 1% 5%;
+}
+
+h2, h2 a:visited{
+	color:black;
+}
+
+h3{
+	font-family:Open Sans Condensed;
+	font-size: 3em;
+	color:black;
+	margin-left: 1em;
+	
+}
+
+.camisetas, .bolsos, .sudaderas, .papeleria, .tazas{
+	background-color: white;
+	padding:1% 0 1% 0%;
+	margin:4% 2% 5% 2%;
+}
+
+.todas_camisetas img, .todos_bolsos img, .todas_sudaderas img, .todo_papeleria img, .todo_tazas img{
+	margin:5% 10% 5% 10%;
+}
+
+.todas_camisetas, .todos_bolsos, .todas_sudaderas, .todo_papeleria, .todo_tazas{
+	background-color: white;
+}
+
+.todas_camisetas img, .todo_tazas img, .todos_bolsos img, .todas_sudaderas img, .todo_papeleria img{
+	display:inline;
+	width:25%;
+}
+
+.precio{
+	display:none;
+}
+
+.catalogo{
+	width:1100px;
+	margin: 0 5% 0 5%;	
+}
+
+.catalogo div{
+	display:inline;
+}
+.catalogo img{
+	width:20%;
+}
+
+.mostrar2, .mostrar4, .mostrar7, .mostrar9{
+	display:none;
+}
+
+.fotos li{
+	display:inline;
+
+}
+.camisetas p, .bolsos p, .sudaderas p, .papeleria p, .tazas p{
+	text-align: center;
+	margin-bottom:5%;
+}
+
+.camisetas p a, .bolsos p a, .sudaderas p a, .papeleria p a, .tazas p a{
+	text-decoration: none;
+	color:#8a8b8f;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.limpiar{
+	clear: both;
+
+}
+
+.espacio{
+	height: 750px;
+}
+
+.e1 a, .e2 a, .e3 a, .e4 a, .e5 a{
+	color:black; 
+}
+
+.e1 a:visited, .e2 a:visited, .e3 a:visited, .e4 a:visited, .e5 a:visited{
+	color:black; 
+}
+
+
+.menu_responsive{
+	display:none;
+}
+
+.logo_responsive img{
+	display:none;
+}
+
+.velo{
+	display:none;
+	background-color: rgba(46, 44, 44, 0.4);
+	position:absolute;
+	top:0; 
+	left:0;
+	width:100%;
+	height:100%;
+}
+.modal_newletter{
+	display:none;
+	background-color: white;
+	z-index: 1001;
+}
+
+label a:visited{
+	color:black;
+}
+
+.modal_newletter label a{
+	color:black;
+}
+
+.formulario2{
+	font-family:"Open Sans", sans-serif;
+	margin-left:30%;
+	margin-right:25%;
+	margin-bottom:5%;
+	margin-top:25%;
+	line-height:1.5em;
+	padding:2em;
+	font-size:1em;
+	float:left;
+	padding-top:1em;
+	background-color:white ;
+}
+.formulario2 label{
+	font-family:"Open Sans", sans-serif;
+	color:black;
+}
+
+.suscribete{
+	font-family:"Open Sans", sans-serif;
+	font-size: 2em;
+}
+
+.cerrar{
+	font-family:"Open Sans", sans-serif;
+	background-color: rgba(46, 44, 44, 0.2);
+	float:right;
+	border: solid black 1px;
+	margin:0;
+	padding:0 0.5em 0 0.5em;
+
+}
+
+.aviso_legal, .politica_privacidad, .devoluciones{
+	background-color: white;
+	color: black;
+	font-family:"Open Sans", sans-serif;
+	text-align:justify;
+	margin:1em;
+	padding:2em 3em 2em 3em;
+}	
+
+.devoluciones li{
+	text-align:left;
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.formulario label a{
+	color: white;
+	font-style:italic;
+}
+
+.formulario label a:visited{
+	color: white;
+	font-style:italic;
+}
+
+.formulario2 label a{
+	color: black;
+	font-style:italic;
+}
+
+.formulario2 label a:visited{
+	color: black;
+	font-style:italic;
+}
+
+.flecha_derecha1, .flecha_derecha2, .flecha_derecha4, .flecha_derecha5{
+	padding:0;
+	float:right;
+	margin:5em 6em 5em 0;
+	color: rgba(68, 74, 86, 1);
+}
+
+.fotos{
+	width:1540px;
+	height:220px;
+}
+.flecha_izquierda1, .flecha_izquierda2, .flecha_izquierda3, .flecha_izquierda4, .flecha_izquierda5{
+	padding:0;
+	float:left;
+	margin:5em 0em 5em 0em;
+	color: rgba(68, 74, 86, 0.5);
+}
+
+.flecha_derecha3{
+	padding:0;
+	float:right;
+	margin:5em 6em 5em 0;
+	color: rgba(68, 74, 86, 0.5);	
+}
+
+
+.camisetas_colocadas li{
+	text-decoration: none;
+	display:inline;
+	background-color: blue;
+}
+
+
+
+.boton_compra{
+	background-color: red;
+	width:100px;
+}
+
+
+.carrito{
+	float:right;
+	margin-right:1em;
+}
+
+.carrito a {
+	color:black;
+	font-family:"Open Sans", sans-serif;
+	font-size:0.8em;
+}
+
+.formulario_eshop{
+	float:right;
+	font-family:"Open Sans", sans-serif;
+}
+
+.formulario_eshop label{
+	color:black;
+}
+
+.formulario_eshop a{
+	color:black;
+	font-family:"Open Sans", sans-serif;
+	font-style: cursive;
+	font-size:0.8em;
+	padding-right:1em;
+	float:right;
+}
+
+.formulario_acceso{
+	width:500px;
+	background-color:rgba(44, 44, 44, 0.9); 
+	margin:0 auto;
+	margin-top:20%;
+	margin-bottom:22%;
+	border-radius: 4%;
+}
+
+.acceso{
+	padding:2em;
+	font-family:"Open Sans", sans-serif;
+	line-height:2em;
+	font-size:1em;
+
+}
+
+
+.acceso label{
+	margin-left: 10%;
+	width:200px;
+	margin:0 auto;
+}
+
+.cajas_acceso{
+	display:table-cell;
+	float:right;
+}
+
+.acceso a{
+	color:white;
+	
+	margin-left:10%;
+
+}
+
+.acceso a:visited{
+	color:white;
+}
+
+.acceso button{
+	width:20%;
+	margin:2% 5% 1% 80%;
+}
+
+.formulario_registro{
+	width:500px;
+	background-color:rgba(44, 44, 44, 0.9); 
+	margin:0 auto;
+	margin-top:12%;
+	margin-bottom:12%;
+	border-radius: 4%;
+}
+
+.registro{
+	padding:2em;
+	font-family:"Open Sans", sans-serif;
+	line-height:2em;
+	font-size:1em;
+	margin-bottom:10%;
+
+}
+
+.registro label{
+	margin-left: 10%;
+	width:200px;
+	margin:0 auto;
+}
+
+.cajas_registro{
+	display:table-cell;
+	float:right;
+}
+
+.registro a{
+	color:white;
+}
+
+.registro a:visited{
+	color:white;
+}
+
+.registro button{
+	float:right;
+}
+
+#acceso{
+	float:right;
+	margin:2% 5% 2% 5%;
+
+}
+
+.fa-4x{
+	color:white;
+	margin-left:0.5em;
+
+} 
+
+.perfil p, .lista_usuarios p, .borrar_perfil p{
+	font-family:"Open Sans", sans-serif;
+	color:white;
+	font-size: 1em;
+	display: table-cell;
+	position: relative;
+	float:right;
+	margin-right:2em;
+	margin-top:1.7em;
+}
+
+.perfil, .lista_usuarios, .borrar_perfil {
+	vertical-align: center;
+	padding-top:1em;
+	padding-bottom:1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-top:10%;
+	margin-bottom: 20%
+
+	}
+
+.menu_control{
+	width:27%;
+	margin:0 auto;
+	padding:0;
+	margin-bottom: 5%;
+	margin-top:3%;
+	background-color:rgba(44, 44, 44, 0.9);
+	border-radius: 0.5em;
+}	
+.pie p{
+	text-align:center;
+	color:white;
+	font-family:"Open Sans", sans-serif;
+}
+
+.pie p a{
+	color:white;
+}
+
+.pie p a:visited{
+	color:white;
+}

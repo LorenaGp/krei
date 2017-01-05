@@ -1,0 +1,42 @@
+@media only screen and (max-device-width: 400px){
+	html { 
+		background: url(../img/fondo.png) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	.menu_responsive{
+		display:block;
+		float:left;
+		margin:0;
+		padding:0;
+	}
+
+	.barra_menu li{
+		display:none;
+	}
+
+	.logo_responsive img{
+		display:inline;
+		width:40%;
+		background-color: red;
+		float:left;
+	}
+}
+
+@media only screen and (max-device-width: 1200px){
+	
+	.menu_responsive{
+		display:none;
+	}
+
+	.logo_responsive img{
+		display:none;
+	}	
+
+	.barra_menu li{
+		display:inline;
+	}
+}

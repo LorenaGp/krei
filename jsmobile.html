@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="pageone" data-type="horizontal" data-title="Home" data-theme="b">
+		<div data-role="header">
+			<div data-role="controlgroup" data-type="horizontal" id="menu_navigation">
+				<a href="#pagetwo" class="ui-btn ui-icon-home ui-btn-icon-notext" data-transition="fade">Home</a>
+				<a class="ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#pagetwo" data-transition="fade">Ir a la siguiente página</a>
+				<a class="ui-btn ui-icon-mail  ui-btn-icon-notext ui-btn-inline" href="mailto:l.gomezpe89@gmail.com" data-transition="fade">@</a>
+			</div>	
+		</div>
+		<div data-role="content">
+			<div data-role="panel" id="mypanel" data-display="push" >
+				<h2>Panel</h2>
+				<p><a href="#">Opción 1</a></p>
+				<p><a href="#">Opción 2</a></p>
+				<p><a href="#">Opción 3</a></p>
+				<p><a href="#">Opción 4</a></p>
+			</div>
+
+			<a href="#mypanel" class="ui-btn ui-btn-inline">Abrir panel</a>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible">
+					<h1>Mi Contenido 1</h1>
+					<p>Contenido que me gusta</p>
+				</div>	
+				<div data-role="collapsible">
+					<h1>Mi Contenido 2</h1>
+					<p>Contenido que me gusta</p>
+				</div>	
+			</div>
+		</div>
+		<div data-role="footer">
+			<a class="ui-btn ui-icon-action ui-btn-icon-notext ui-btn-inline" data-rel="popup" href="#mipopup" data-transition="fade">web</a>
+			<a href="https://facebook.com" class="ui-btn ui-icon-home ui-btn-icon-notext" data-transition="fade">Home</a>
+				<a class="ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="https://twitter.com" data-transition="fade">Ir a la siguiente página</a>
+				<a class="ui-btn ui-icon-mail  ui-btn-icon-notext ui-btn-inline" href="https://instagram.com" data-transition="fade">@</a>
+			<div class="ui-content" data-role="popup" id="mipopup" data-overlay-theme="a" data-dismissible="false" data-position-to="window">
+			<!--
+			data-dismissible="false" sirve para que no se cierre la ventana modal al puslar esc o raton
+			data-position-to="window" la ventana modal se posiciona con la ventana (DOM)-->
+				<a href="http://motorpasion.com" target="blank">Visita mi web: </a>
+			</div>
+
+			<div data-role="controlgroup" data-type="horizontal" id="menu_social">
+				<a href="https://facebook.com" class="ui-btn ui-icon-home ui-btn-icon-notext" data-transition="fade">Home</a>
+				<a class="ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="https://twitter.com" data-transition="fade">Ir a la siguiente página</a>
+				<a class="ui-btn ui-icon-mail  ui-btn-icon-notext ui-btn-inline" href="https://instagram.com" data-transition="fade">@</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div data-role="page" id="pagetwo" data-title="Contacto">
+		<a href="#pageone" data-transition="flow">Ir a la siguiente página</a>
+		<div data-role="header">
+			<div data-role="controlgroup" data-type="horizontal" id="menu_navigation">
+				<a href="#pagetwo" data-iconpos="top" class="ui-btn-active ui-btn ui-icon-home ui-btn-icon-notext" data-transition="fade">Home</a>
+				<a data-iconpos="top" class="ui-btn ui-icon-info ui-btn-inline ui-btn-icon-notext" href="#pagetwo" data-transition="fade">Ir a la siguiente página</a>
+				<a data-iconpos="top" class="ui-btn ui-icon-mail ui-btn-inline ui-btn-icon-notext" href="mailto:l.gomezpe89@gmail.com" data-transition="fade">@</a>
+			</div>	
+		</div>
+		<div data-role="main">
+			<div data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" data-column-btn-text="click!">
+				<table>
+					<thead>
+						<tr>
+							<th data-priority="3">lo primero</th>
+							<th data-priority="1">lo segundo</th>
+							<th data-priority="4">lo tercero</th>
+							<th data-priority="3">lo cuarto</th>
+							<th data-priority="6">lo quinto</th>
+							<th data-priority="5">lo sexto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>	
+						<td>lo de despues</td>
+						<td>lo de luego</td>
+						<td>lo ultimo</td>
+						<td>lo de despues</td>
+						<td>lo de luego</td>
+						<td>lo ultimo</td>
+						</tr>
+						<tr>
+							<td>lo de despues</td>
+							<td>lo de luego</td>
+							<td>lo ultimo</td>
+							<td>lo de despues</td>
+							<td>lo de luego</td>
+							<td>lo ultimo</td>
+						</tr>		
+					</tbody>	
+				</table>
+			</div>
+
+			<div class="ui-grid-a ui-responsive">
+			<!--
+			ui-grid-solo= 1 columna al 100%
+			ui-grid-a= 2 columnas al 50%
+			ui-grid-b= 3 columnas al 33%
+			ui-grid-c= 4 colunas al 25%
+			ui-grid-d= 5 columnas del 20%
+			 -->
+				<div class="ui-block-a">
+					<span>
+						Texto 1
+					</span>
+				</div>
+				<div class="ui-block-b">
+					<span>
+						Texto 2
+					</span>
+				</div>
+				<div class="ui-block-a">
+					<span>
+						Texto 3
+					</span>
+				</div>
+				<div class="ui-block-b">
+					<span>
+						Texto 4
+					</span>
+				</div>
+			</div>
+
+			<div>
+				<ul data-role="listview"> <!-- data-autodividers="true" autodivide la lista-->
+					<li data-role="list-divider">Uno</li>
+					<li>Dos</li>
+					<li>Tres</li>
+					<li data-role="list-divider">Cuatro</li>
+					<li>cinco</li>
+					<li>seis</li>	
+			</div>
+			
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a data-icon="home" href="https://twitter.com" data-transition="fade">Ir a la siguiente página</a></li>
+					<li><a data-icon="info" href="https://twitter.com" data-transition="fade">Ir a la siguiente página</a></li>
+					<li><a data-icon="camera" href="https://twitter.com" data-transition="fade">Ir a la siguiente página</a></li>
+				</ul>	
+		</div>
+	</div>
+
+</body>
+</html>
+
+	
